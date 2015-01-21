@@ -38,8 +38,14 @@
 |
 */
 
+// Provide mapping of different pages to custom controllers
 $route['default_controller'] = "welcome";
 $route['sleep'] = "first/zzz";
+$route['lock/(:any)/(:any)'] = "welcome/shucks";
+$route['show/(:num)'] = "first/gimme";
+$route['dunno'] = "guess";
+$route['([A-z]{4})/bingo'] = "bingo";
+$route['(comp\d{4})/(:any)'] = "bingo/wisdom";
 $route['404_override'] = '';
 
 
