@@ -40,11 +40,11 @@ class First extends Application
     }
 
     // Retrieve and display the quote for "lock/em/up" link
-    function gimme()
+    function gimme($index)
     {
         $this->data['pagebody'] = 'justone';
 
-        $source = $this->quotes->get(3);
+        $source = $this->quotes->get($index);
 
         $this->data = array_merge($this->data, $source);
 
