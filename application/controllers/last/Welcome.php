@@ -20,8 +20,11 @@ class Welcome extends Application
 
         $source = $this->quotes->last();
 
-        $this->data = array_merge($this->data, $source);
+        $this->data = array_merge( $this->data, $source );
 
         $this->render();
     }
 }
+
+/* End of file Welcome.php */
+/* Location: application/controllers/last/Welcome.php */

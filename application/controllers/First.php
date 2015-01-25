@@ -22,7 +22,7 @@ class First extends Application
 
         $source = $this->quotes->first();
 
-        $this->data = array_merge($this->data, $source);
+        $this->data = array_merge( $this->data, $source );
 
         $this->render();
     }
@@ -32,22 +32,25 @@ class First extends Application
     {
         $this->data['pagebody'] = 'justone';
 
-        $source = $this->quotes->get(1);
+        $source = $this->quotes->get( 1 );
 
-        $this->data = array_merge($this->data, $source);
+        $this->data = array_merge( $this->data, $source );
 
         $this->render();
     }
 
     // Retrieve and display the quote for "lock/em/up" link
-    function gimme($index)
+    function gimme( $index )
     {
         $this->data['pagebody'] = 'justone';
 
-        $source = $this->quotes->get($index);
+        $source = $this->quotes->get( $index );
 
-        $this->data = array_merge($this->data, $source);
+        $this->data = array_merge( $this->data, $source );
 
         $this->render();
     }
 }
+
+/* End of file First.php */
+/* Location: application/controllers/First.php */
